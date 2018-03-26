@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block content %}
+    <div class="container-fluid" style="background:#222">
+            <div class="row">
+              <div class="col-md-12">
+              <div class="container" style="background:#333">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-7 col-md-7">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h1 style="color: #ffffff">Ingrese Nombre Del Invocador</h1>
+                                <form class="form-inline" action="/prueba/" method="post">
+                                    {% csrf_token %}
+                                    <div id="custom-search-input">
+                                        <div class="input-group col-md-12">
+                                            <input type="text" class="search-query form-control" name="invocador" id="invocador" placeholder="Invocador" required />
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="submit">
+                                                    <span class=" glyphicon glyphicon-search"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="text-center" style="margin-top: 20px">
+                                            <img src="{% static 'img/loading.gif' %}" class="img-responsive center-block"  >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    {# Seccion de la publicidad  #}
+                    <div class="col-xs-12 col-sm-5 col-md-5">
+                        <h1 class="text-center" style="color:#fff">NOTICIAS</h1>
+                        <div class="thumbnail">
+                          <img src="{% static 'img/buho.gif' %}" alt="" class="img-circle">
+                          <div class="caption">
+                            <h3>Thumbnail label</h3>
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="row" >
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+{#                                 {% for json in link %}#}
+{#                                     <h1 style="color: #ffffff">Estadisticas del Invocador</h1>#}
+{#                                     <h6 style="color: #ffffff">{{ json }}</h6>#}
+{#                                 {% endfor %}#}
+                                 {% for oscar in link.participants %}
+                                    <h4 style="color: #000000">{{ oscar.championId }}</h4>
+                                 {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+        </div>
+
+
+
+{#    <form class="form-inline" action="/prueba/" method="post">#}
+{#        {% csrf_token %}#}
+{#        <div class="form-group">#}
+{#        <label class="sr-only" for="exampleInputEmail3">Email address</label>#}
+{#            <input type="text" name="invocador" id="invocador" class="form-control"  placeholder="Invocador" required>#}
+{#        </div>#}
+{#        <button type="submit" class="btn btn-default">Enviar</button>#}
+{#    </form>#}
+
+
+{#    {% for json in link %}#}
+{#        <h4 style="color: #000000">{{ json }}</h4>#}
+{#    {% endfor %}#}
+{% endblock %}

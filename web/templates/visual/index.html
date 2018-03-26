@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		
+		<link href="{% static 'css/style.css' %}"  rel="stylesheet"   >
+		
+				
+		<!-- Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		
+		<style>
+		  body {
+			font-family: 'Titillium Web', serif;
+		  }
+		  .nvlsummoner{
+		    background: #444;
+			border-radius: 50%;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+			font-weight: 700;
+			color: #ccc;
+			position: absolute;
+			font-size: 14px
+		  }
+		  .bg{
+			/* The image used */
+			background-image: url("{% static 'img/alistar_0.jpg' %}") ;
+			/* Full height */
+			height: 100%; 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-bottom:10px;
+			padding-top:10px
+		  }
+		  .bg-flip{
+			/* The image used */
+			background-image: url("{% static 'img/missfortune_16.jpg' %}") ;
+			/* Full height */
+			height: 100%; 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-bottom:10px;
+			padding-top:10px;
+			-webkit-transform: scaleX(-1);
+		  }
+		</style>
+		<title>Index</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="alert alert-dark" role="alert">
+				<h5>PARTIDAS RECIENTES</h5>
+					 			
+				<div class="card-deck">
+				<!--VICTORIA-->
+				  <div class="card" style="background: black">
+					<div class="text-center">
+						<h5 class="card-title font-weight-bold" style="color: #0A99AE">Victoria</h5>
+						<div style="margin: 0 auto; height:120px; width: 120px; margin-bottom:10px">
+							<div class="border border-warning nvlsummoner">
+							  18
+							</div>
+							<img class="rounded mx-auto d-block " src="{% static 'img/Azir.png' %}" alt="Card image cap" >
+						</div>
+						<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+						<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+					</div>
+					<div class="card-body" style="padding-top: 10px;">
+					  <h5 class="card-title font-weight-bold" style="color: #A09B8C">Grieta del Invicador</h5>
+					  <img src="{% static 'img/3157.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3190.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3040.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3151.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3089.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3124.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3364.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  
+					  <div class="d-flex">
+						<div class="mr-auto p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">15/0/26 <i class="icon-kills "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">10.6K <i class="icon-gold win "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">180 <i class="icon-minions win"></i></span></div>
+					  </div>
+					
+					</div>
+					
+				  </div>
+				  <!--DERROTA-->
+				  <div class="card" style="background: black">
+					<div class="text-center">
+						<h5 class="card-title font-weight-bold" style="color: #C40512">Derrota</h5>
+						<div style="margin: 0 auto; height:120px; width: 120px; margin-bottom:10px">
+							<div class="border border-warning nvlsummoner">
+							  18
+							</div>
+							<img class="rounded mx-auto d-block rounded-circle border border-warning" src="{% static 'img/Azir.png' %}" alt="Card image cap" >
+						</div>	
+						<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+						<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">						
+					</div>
+					<div class="card-body" style="padding-top: 10px;">
+					  <h5 class="card-title font-weight-bold" style="color: #785A28">Grieta del Invicador</h5>
+					  <img src="{% static 'img/3157.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3190.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3040.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3151.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3089.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3124.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  <img src="{% static 'img/3364.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+					  
+					  <div class="d-flex">
+						<div class="mr-auto p-2"><span class="font-weight-bold" style=" color: #785A28; margin-top:5px; font-size: 14px">15/0/26 <i class="icon-kills "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #785A28; margin-top:5px; font-size: 14px">10.6K <i class="icon-gold win "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #785A28; margin-top:5px; font-size: 14px">180 <i class="icon-minions win"></i></span></div>
+					  </div>
+					</div>
+					 
+				  </div>
+				  
+				  <div class="card" style="background: black">
+					<div class="text-center">
+						<h5 class="card-title font-weight-bold" style="color: #C40512">Rehacer</h5>
+						<div style="margin: 0 auto; height:120px; width: 120px; margin-bottom:10px">
+							<div class="border border-warning nvlsummoner">
+							  18
+							</div>
+							<img class="rounded mx-auto d-block img-thumbnail border border-warning" src="{% static 'img/Azir.png' %}" alt="Card image cap" >
+						</div>	
+						<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+						<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">						
+					</div>
+					<div class="card-body" style="padding-top: 10px;">
+					  <h5 class="card-title font-weight-bold" style="color: #785A28">Grieta del Invicador</h5>
+					  <div class="text-center">
+						  <img src="{% static 'img/3157.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px" >
+						  <img src="{% static 'img/3190.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px" >
+						  <img src="{% static 'img/3040.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px" >
+						  <img src="{% static 'img/3151.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px" >
+						  <img src="{% static 'img/3089.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px">
+						  <img src="{% static 'img/3124.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px">
+						  <img src="{% static 'img/3364.png' %}" class="rounded-0 img-fluid border border-warning mx-auto my-auto" style="width: 38px">
+					  </div>
+					  <div class="d-flex">
+						<div class="mr-auto p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">15/0/26 <i class="icon-kills "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">10.6K <i class="icon-gold win "></i></span></div>
+						<div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">180 <i class="icon-minions win"></i></span></div>
+					  </div>
+					</div>
+					 
+				  </div>
+				  
+				</div>
+				<br>
+				<!-- otra forma-->
+				<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+				<div class="row">
+					<div class="col-6 col-md-4">
+						<div class="container bg-flip rounded-0 border border-warning">
+							<div class="text-left" style="-webkit-transform: scaleX(-1);">
+								<div> 
+									<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+								<div>
+									<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4">
+						<div class="container rounded-0 border border-warning" style="background:black">
+							<div class="col text-center">
+								<span class="font-weight-bold" style=" color: #785A28;">Grieta del Invicador</span>
+							</div>
+							<div class="row">
+								<div class="col text-left">
+									<div class="mr-auto"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px"><i class="icon-kills "></i> 15/0/26</span></div>
+									<div class=""><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px"><i class="icon-gold win "></i> 10.6K</span></div>
+									<div class=""><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px"><i class="icon-minions win"></i> 180</span></div>
+								</div>
+								<div class="col text-right">
+									<div class="mr-auto"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">15/0/26 <i class="icon-kills "></i></span></div>
+									<div class=""><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">10.6K <i class="icon-gold win "></i></span></div>
+									<div class=""><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">180 <i class="icon-minions win"></i></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4">
+						<div class="container bg rounded-0 border border-warning">
+							<div class="text-right">
+								<div> 
+									<img src="{% static 'img/SummonerFlash.png' %}img/" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+								<div>
+									<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="margin-top:5px">
+					<div class="col-6 col-md-4">
+						<div class="container bg-flip rounded-0 border border-warning">
+							<div class="text-left" style="-webkit-transform: scaleX(-1);">
+								<div> 
+									<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+								<div>
+									<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4">
+						<div class="container" style="background:red">
+							informacion
+						</div>
+					</div>
+					<div class="col-6 col-md-4">
+						<div class="container bg rounded-0 border border-warning">
+							<div class="text-right">
+								<div> 
+									<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+								<div>
+									<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
+								</div>
+							</div>
+						</div>
+					</div>
+					<i class="icon-gold win"></i>
+					<i class="icon-language"></i>
+					<i class="icon-film"></i>
+					<i class="icon-clock"></i>
+					<i class="icon-spinner3"></i>
+					<i class="icon-cog"></i>
+					<i class="icon-stats-bars"></i>
+					<i class="icon-fire"></i>
+					<i class="icon-domination"></i>
+					<i class="icon-inspiration"></i>
+					<i class="icon-precision"></i>
+				</div>
+			</div>
+			<!---
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" id="element">
+			  Tooltip on top
+			</button>
+			<div><i class="icon-minions win" ng-class="match.scheme"></i>&nbsp; <span class="summoner-basic ng-binding">119</span></div>
+			<div class="summoner-basic ng-binding ng-scope win" ng-class="match.scheme" ng-if="::(match.stats.largestKillingSpree > 0)">2X&nbsp;<i class="icon-kills"></i></div>
+			<div><i class="icon-gold win" ng-class="match.scheme"></i>&nbsp; <span class="summoner-basic ng-binding">9.4k</span></div>
+			-->
+		</div>
+		
+		<!--Bootstrap JS-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();   
+			});
+		</script>
+	</body>
+	
+	
+</html>

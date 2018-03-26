@@ -1,0 +1,68 @@
+
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba</title>
+</head>
+<body>
+
+ <form class="form-inline" action="/summoner/" method="post">
+     {% csrf_token %}
+     <div class="form-group">
+{#   <label class="sr-only" for="exampleInputEmail3">Invocador</label>#}
+         <input type="text" name="invocador" id="invocador" class="form-control"  placeholder="Summober" required>
+     </div>
+     <button type="submit" class="btn btn-default">Enviar</button>
+ </form>
+
+ <ul>
+     <li>profileIconId: {{ link.profileIconId }}</li>
+     <li>name: {{ link.name }}</li>
+     <li>summonerLevel: {{ link.summonerLevel }}</li>
+     <li>accountId: {{ link.accountId }}</li>
+     <li>id: {{ link.id }}</li>
+     <li>revisionDate: {{ link.revisionDate }}</li>
+    <!-- <img src="{% static 'img/loading.gif' %}" class="img-responsive center-block"  >-->
+     <li>prueba: {{ imgs }}</li>
+     <li>prueba: {{ mges }}</li>
+ </ul>
+
+ <!--
+ {% for items in imgs %}
+    {% for x in items %}
+      <img src="{% static x %}" />
+    {% endfor %}
+ {% endfor %}
+<div> *************************************</div>
+ {% for x in mges %}
+    {% for key, value in x.items %}
+      <img src="{% static value %}" />
+    {% endfor %}
+ {% endfor %}
+-->
+
+ <!---
+ <div class=" " style="padding-top: 10px;">
+    <h5 class="card-title font-weight-bold" style="color: #A09B8C">Grieta del Invicador</h5>
+    <img src="{% static 'img/3157.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3190.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3040.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3151.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3089.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3124.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <img src="{% static 'img/3364.png' %}" class="rounded-0 border border-warning" style="width: 37px">
+    <div class="d-flex">
+    <div class="mr-auto p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">15/0/26 <i class="icon-kills "></i></span></div>
+                        <div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">10.6K <i class="icon-gold win "></i></span></div>
+                        <div class="p-2"><span class="font-weight-bold" style=" color: #A09B8C; margin-top:5px; font-size: 14px">180 <i class="icon-minions win"></i></span></div>
+                      </div>
+                    </div>
+-->
+     
+     
+
+</body>
+</html>

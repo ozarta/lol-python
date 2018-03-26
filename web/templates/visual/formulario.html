@@ -1,0 +1,44 @@
+{#{% extends "base.html" %}#}
+{#{% load static%}#}
+{##}
+{#{% block content %}#}
+    <form class="form-inline" action="/stats/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+{#        <label class="sr-only" for="exampleInputEmail3">Invocador</label>#}
+            <input type="text" name="invocador" id="invocador" class="form-control"  placeholder="Summober" required>
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+    </form>
+
+
+{#    {% for oscar in link.participants %}#}
+{#        <h4 style="color: #000000">{{ oscar.championId }}</h4>#}
+{#    {% endfor %}#}
+
+
+{#    {% for id in link3 %}#}
+        <h4 style="color: #000000">
+            Los resultados de la busqueda son:
+        </h4>
+
+        <ul>
+          <li>ProfileIconId: {{ link }}</li>
+          <li>Name: {{ link2 }}</li>
+          <li>SummonerLevel: {{ link3 }}</li>
+          <li>Id: {{ link4 }}</li>
+          <li>Imagen peticion: <img src="{{ link6 }}" alt=""> </li>
+{#          <li>Particpantes: {{ link5 }}</li>#}
+          <li>Campeon: {{ link7 }}</li>
+          <li>Hechizo1: {{ link8 }}</li>
+          <li>Hechizo2: {{ link9 }}</li>
+          <li>lkjdflk: {{ link10 }}</li>
+          <li>H1: {{ link11 }}</li>
+        </ul>
+
+        <img src="{% static 'img/buho.gif' %}" alt="" class="img-rounded">
+
+
+{#    {% endfor %}#}
+
+{#{% endblock %}#}

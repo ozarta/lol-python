@@ -1,0 +1,703 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.eot?f9ua45');
+  src:  url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.eot?f9ua45#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.woff2?f9ua45') format('woff2'),
+    url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.ttf?f9ua45') format('truetype'),
+    url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.woff?f9ua45') format('woff'),
+    url('https://s3.amazonaws.com/icomoon.io/92633/Lolicons/icomoon.svg?f9ua45#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-language:before {
+  content: "\e894";
+}
+.icon-film:before {
+  content: "\e933";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-spinner3:before {
+  content: "\e97c";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-fire:before {
+  content: "\e91b";
+}
+.icon-domination:before {
+  content: "\e91d";
+}
+.icon-inspiration:before {
+  content: "\e91e";
+}
+.icon-precision:before {
+  content: "\e91f";
+}
+.icon-resolve:before {
+  content: "\e920";
+}
+.icon-sorcery:before {
+  content: "\e921";
+}
+.icon-win-down:before {
+  content: "\e931";
+}
+.icon-win-up:before {
+  content: "\e932";
+}
+.icon-popularity-down:before {
+  content: "\e930";
+}
+.icon-skin:before {
+  content: "\e92e";
+}
+.icon-achievement:before {
+  content: "\e924";
+}
+.icon-roster:before {
+  content: "\e925";
+}
+.icon-games-played:before {
+  content: "\e926";
+}
+.icon-ward:before {
+  content: "\e927";
+}
+.icon-baron:before {
+  content: "\e928";
+}
+.icon-dragon:before {
+  content: "\e929";
+}
+.icon-tower:before {
+  content: "\e92a";
+}
+.icon-KDA:before {
+  content: "\e92b";
+}
+.icon-champion:before {
+  content: "\e92c";
+}
+.icon-assists:before {
+  content: "\e92d";
+}
+.icon-BE:before {
+  content: "\e923";
+}
+.icon-discord:before {
+  content: "\e922";
+}
+.icon-death:before {
+  content: "\e919";
+}
+.icon-free-rotation:before {
+  content: "\e91a";
+}
+.icon-urf-crown:before {
+  content: "\e918";
+  color: #010101;
+}
+.icon-lanes-bottom:before {
+  content: "\e915";
+}
+.icon-lanes-mid:before {
+  content: "\e916";
+}
+.icon-lanes-top:before {
+  content: "\e917";
+}
+.icon-gold:before {
+  content: "\e904";
+}
+.icon-lanes-all:before {
+  content: "\e914";
+}
+.icon-magic:before {
+  content: "\e912";
+}
+.icon-difficulty:before {
+  content: "\e913";
+}
+.icon-attack:before {
+  content: "\e910";
+}
+.icon-defense:before {
+  content: "\e911";
+}
+.icon-kills:before {
+  content: "\e91c";
+}
+.icon-level:before {
+  content: "\e907";
+}
+.icon-minions:before {
+  content: "\e909";
+}
+.icon-no-champ:before {
+  content: "\e90a";
+}
+.icon-riot-fist:before {
+  content: "\e90b";
+}
+.icon-total-minions:before {
+  content: "\e90e";
+}
+.icon-xp:before {
+  content: "\e90f";
+}
+.icon-archetype:before {
+  content: "\e900";
+}
+.icon-mastery:before {
+  content: "\e901";
+}
+.icon-rune:before {
+  content: "\e902";
+}
+.icon-roles-all:before {
+  content: "\e90d";
+}
+.icon-roles-adcarry:before {
+  content: "\e903";
+}
+.icon-roles-bottom:before {
+  content: "\e903";
+}
+.icon-roles-bot:before {
+  content: "\e903";
+}
+.icon-roles-jungle:before {
+  content: "\e905";
+}
+.icon-roles-mid:before {
+  content: "\e906";
+}
+.icon-roles-support:before {
+  content: "\e908";
+}
+.icon-roles-top:before {
+  content: "\e90c";
+}
+.icon-popularity-up:before {
+  content: "\e92f";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-star:before {
+  content: "\f005";
+}
+.icon-star-o:before {
+  content: "\f006";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th:before {
+  content: "\f00a";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-delete:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-signal:before {
+  content: "\f012";
+}
+.icon-cog2:before {
+  content: "\f013";
+}
+.icon-gear:before {
+  content: "\f013";
+}
+.icon-trash-o:before {
+  content: "\f014";
+}
+.icon-download:before {
+  content: "\f019";
+}
+.icon-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+.icon-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+.icon-repeat:before {
+  content: "\f01e";
+}
+.icon-rotate-right:before {
+  content: "\f01e";
+}
+.icon-refresh:before {
+  content: "\f021";
+}
+.icon-headphones:before {
+  content: "\f025";
+}
+.icon-volume-off:before {
+  content: "\f026";
+}
+.icon-volume-down:before {
+  content: "\f027";
+}
+.icon-volume-up:before {
+  content: "\f028";
+}
+.icon-tags:before {
+  content: "\f02c";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-bookmark:before {
+  content: "\f02e";
+}
+.icon-bold:before {
+  content: "\f032";
+}
+.icon-italic:before {
+  content: "\f033";
+}
+.icon-align-left:before {
+  content: "\f036";
+}
+.icon-align-center:before {
+  content: "\f037";
+}
+.icon-align-right:before {
+  content: "\f038";
+}
+.icon-align-justify:before {
+  content: "\f039";
+}
+.icon-list:before {
+  content: "\f03a";
+}
+.icon-dedent:before {
+  content: "\f03b";
+}
+.icon-outdent:before {
+  content: "\f03b";
+}
+.icon-indent:before {
+  content: "\f03c";
+}
+.icon-video-camera:before {
+  content: "\f03d";
+}
+.icon-image:before {
+  content: "\f03e";
+}
+.icon-photo:before {
+  content: "\f03e";
+}
+.icon-picture-o:before {
+  content: "\f03e";
+}
+.icon-pencil:before {
+  content: "\f040";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-pencil-square-o:before {
+  content: "\f044";
+}
+.icon-step-backward:before {
+  content: "\f048";
+}
+.icon-fast-backward:before {
+  content: "\f049";
+}
+.icon-backward:before {
+  content: "\f04a";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-pause:before {
+  content: "\f04c";
+}
+.icon-stop:before {
+  content: "\f04d";
+}
+.icon-forward:before {
+  content: "\f04e";
+}
+.icon-fast-forward:before {
+  content: "\f050";
+}
+.icon-step-forward:before {
+  content: "\f051";
+}
+.icon-eject:before {
+  content: "\f052";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-plus-circle:before {
+  content: "\f055";
+}
+.icon-minus-circle:before {
+  content: "\f056";
+}
+.icon-times-circle:before {
+  content: "\f057";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-question-circle:before {
+  content: "\f059";
+}
+.icon-info-circle:before {
+  content: "\f05a";
+}
+.icon-check-circle-o:before {
+  content: "\f05d";
+}
+.icon-ban:before {
+  content: "\f05e";
+}
+.icon-arrow-left:before {
+  content: "\f060";
+}
+.icon-arrow-right:before {
+  content: "\f061";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-arrow-down:before {
+  content: "\f063";
+}
+.icon-mail-forward:before {
+  content: "\f064";
+}
+.icon-share:before {
+  content: "\f064";
+}
+.icon-expand:before {
+  content: "\f065";
+}
+.icon-plus:before {
+  content: "\f067";
+}
+.icon-minus:before {
+  content: "\f068";
+}
+.icon-asterisk:before {
+  content: "\f069";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-eye-slash:before {
+  content: "\f070";
+}
+.icon-comment:before {
+  content: "\f075";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
+.icon-twitter-square:before {
+  content: "\f081";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-comments:before {
+  content: "\f086";
+}
+.icon-thumbs-o-up:before {
+  content: "\f087";
+}
+.icon-thumbs-o-down:before {
+  content: "\f088";
+}
+.icon-trophy:before {
+  content: "\f091";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-hand-o-right:before {
+  content: "\f0a4";
+}
+.icon-hand-o-left:before {
+  content: "\f0a5";
+}
+.icon-hand-o-up:before {
+  content: "\f0a6";
+}
+.icon-hand-o-down:before {
+  content: "\f0a7";
+}
+.icon-arrow-circle-left:before {
+  content: "\f0a8";
+}
+.icon-arrow-circle-right:before {
+  content: "\f0a9";
+}
+.icon-arrow-circle-up:before {
+  content: "\f0aa";
+}
+.icon-arrow-circle-down:before {
+  content: "\f0ab";
+}
+.icon-globe:before {
+  content: "\f0ac";
+}
+.icon-wrench:before {
+  content: "\f0ad";
+}
+.icon-filter:before {
+  content: "\f0b0";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-list-ul:before {
+  content: "\f0ca";
+}
+.icon-list-ol:before {
+  content: "\f0cb";
+}
+.icon-magic2:before {
+  content: "\f0d0";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\f0da";
+}
+.icon-sort-desc:before {
+  content: "\f0dd";
+}
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+.icon-sort-asc:before {
+  content: "\f0de";
+}
+.icon-sort-up:before {
+  content: "\f0de";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-comment-o:before {
+  content: "\f0e5";
+}
+.icon-comments-o:before {
+  content: "\f0e6";
+}
+.icon-angle-double-left:before {
+  content: "\f100";
+}
+.icon-angle-double-right:before {
+  content: "\f101";
+}
+.icon-angle-double-up:before {
+  content: "\f102";
+}
+.icon-angle-double-down:before {
+  content: "\f103";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-desktop:before {
+  content: "\f108";
+}
+.icon-circle-o:before {
+  content: "\f10c";
+}
+.icon-spinner:before {
+  content: "\f110";
+}
+.icon-gamepad:before {
+  content: "\f11b";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-exclamation:before {
+  content: "\f12a";
+}
+.icon-shield:before {
+  content: "\f132";
+}
+.icon-ellipsis-v:before {
+  content: "\f142";
+}
+.icon-play-circle:before {
+  content: "\f144";
+}
+.icon-sort-alpha-asc:before {
+  content: "\f15d";
+}
+.icon-sort-alpha-desc:before {
+  content: "\f15e";
+}
+.icon-sort-amount-asc:before {
+  content: "\f160";
+}
+.icon-sort-amount-desc:before {
+  content: "\f161";
+}
+.icon-sort-numeric-asc:before {
+  content: "\f162";
+}
+.icon-sort-numeric-desc:before {
+  content: "\f163";
+}
+.icon-thumbs-up:before {
+  content: "\f164";
+}
+.icon-thumbs-down:before {
+  content: "\f165";
+}
+.icon-youtube-square:before {
+  content: "\f166";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+.icon-male:before {
+  content: "\f183";
+}
+.icon-plus-square-o:before {
+  content: "\f196";
+}
+.icon-cube:before {
+  content: "\f1b2";
+}
+.icon-share-alt:before {
+  content: "\f1e0";
+}
+.icon-twitch:before {
+  content: "\f1e8";
+}
+.icon-cc-visa:before {
+  content: "\f1f0";
+}
+.icon-cc-mastercard:before {
+  content: "\f1f1";
+}
+.icon-cc-discover:before {
+  content: "\f1f2";
+}
+.icon-cc-amex:before {
+  content: "\f1f3";
+}
+.icon-cc-paypal:before {
+  content: "\f1f4";
+}
+.icon-cc-stripe:before {
+  content: "\f1f5";
+}
+.icon-map-o:before {
+  content: "\f278";
+}
+.icon-map:before {
+  content: "\f279";
+}
+.icon-commenting:before {
+  content: "\f27a";
+}
+.icon-commenting-o:before {
+  content: "\f27b";
+}
+.icon-reddit-alien:before {
+  content: "\f281";
+}
+.icon-product-hunt:before {
+  content: "\f288";
+}
