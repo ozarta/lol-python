@@ -36,7 +36,7 @@ def summoner(invocador):
         return render(invocador, 'visual/prueba.html')
 
 #https://la1.api.riotgames.com/lol/summoner/v3/summoners/by-name/laserspartan?api_key=RGAPI-e5889859-3f14-4b47-ae7e-cedcf672477e
-#Oscar es manco
+#Oscar es manco y sin trabajo
 #http://ddragon.leagueoflegends.com/cdn/8.6.1/img/item/1001.png
 #http://ddragon.leagueoflegends.com/cdn/8.6.1/img/spell/SummonerFlash.png
 #http://ddragon.leagueoflegends.com/cdn/8.6.1/img/spell/FlashFrost.png
