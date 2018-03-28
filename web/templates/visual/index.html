@@ -1,21 +1,13 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<!-- Bootstrap CSS -->
-		
-		<link href="{% static 'css/style.css' %}"  rel="stylesheet"   >
-		
-				
-		<!-- Google Fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-		
-		<style>
+	
+{% block content %}
+
+	<link href="{% static 'css/style.css' %}"  rel="stylesheet"   >
+	 	
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<style>
 		  body {
 			font-family: 'Titillium Web', serif;
 		  }
@@ -55,11 +47,9 @@
 			padding-top:10px;
 			-webkit-transform: scaleX(-1);
 		  }
-		</style>
-		<title>Index</title>
-	</head>
-	<body>
-		<div class="container">
+	</style>
+
+	<div class="container" >
 			<div class="alert alert-dark" role="alert">
 				<h5>PARTIDAS RECIENTES</h5>
 					 			
@@ -200,7 +190,7 @@
 						<div class="container bg rounded-0 border border-warning">
 							<div class="text-right">
 								<div> 
-									<img src="{% static 'img/SummonerFlash.png' %}img/" class="rounded-0 border border-warning" style="width: 30px">
+									<img src="{% static 'img/SummonerFlash.png' %}" class="rounded-0 border border-warning" style="width: 30px">
 								</div>
 								<div>
 									<img src="{% static 'img/SummonerDot.png' %}" class="rounded-0 border border-warning" style="width: 30px">
@@ -239,17 +229,7 @@
 							</div>
 						</div>
 					</div>
-					<i class="icon-gold win"></i>
-					<i class="icon-language"></i>
-					<i class="icon-film"></i>
-					<i class="icon-clock"></i>
-					<i class="icon-spinner3"></i>
-					<i class="icon-cog"></i>
-					<i class="icon-stats-bars"></i>
-					<i class="icon-fire"></i>
-					<i class="icon-domination"></i>
-					<i class="icon-inspiration"></i>
-					<i class="icon-precision"></i>
+					
 				</div>
 			</div>
 			<!---
@@ -261,17 +241,7 @@
 			<div><i class="icon-gold win" ng-class="match.scheme"></i>&nbsp; <span class="summoner-basic ng-binding">9.4k</span></div>
 			-->
 		</div>
-		
-		<!--Bootstrap JS-->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			$(document).ready(function(){
-				$('[data-toggle="tooltip"]').tooltip();   
-			});
-		</script>
-	</body>
+
 	
-	
-</html>
+
+{% endblock %}

@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Con esto garantizamos que se vea bien en dispositivos moviles-->
     <title>Pgala Gaming</title>
-	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen"> <!--Llamamos al archivo CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
     <link href="{% static 'css/full-slider.css' %}" rel="stylesheet" media="screen"> <!--Llamamos al archivo CSS Slider -->
     <link href="{% static 'css/bootstrap-social.css' %}" rel="stylesheet" media="screen"> <!--Llamamos al archivo CSS Social -->
     <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" media="screen"> <!--Llamamos al archivo CSS Fuentes -->
@@ -14,9 +14,7 @@
 	<link href="https://www.bancodeoccidente.com.co/icbs-web/images/favicon_BOCC.ico" type="image/x-icon" rel="shortcut icon">
 	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> <!--Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet"> <!--Google Fonts-->
-	
-
-  </head>
+ </head>
   <style>
 	body{
 		background: url(http://www.reachcoach.co.nz/en/wp-content/uploads/2016/04/6879729-city-skyline.jpg) no-repeat center center fixed;
@@ -26,47 +24,42 @@
 		background-size: cover;
 		font-family: 'Electrolize', Electrolize;
 		}
-	.example6 .navbar-brand{
-		  background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
-		  width: 250px;
-		}
   </style>
 <body>
-
-	<nav class="navbar navbar-inverse navbar-fixed-top example6">
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark  fixed-top" >
 		<div class="container">
-		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
-			  <span class="sr-only">Toggle navigation</span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand text-hide" href="http://disputebills.com">Brand Text
+			<a class="navbar-brand" href="">
+				<img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" width="190" height="30" alt="">
 			</a>
-		  </div>
-		  <div id="navbar6" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-			  <li class="active"><a href="#">Home</a></li>
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-				  <li><a href="#">Action</a></li>
-				  <li><a href="#">Another action</a></li>
-				  <li><a href="#">Something else here</a></li>
-				  <li class="divider"></li>
-				  <li class="dropdown-header">Nav header</li>
-				  <li><a href="#">Separated link</a></li>
-				  <li><a href="#">One more separated link</a></li>
-				</ul>
-			  </li>
-			</ul>
-		  </div>
-		  <!--/.nav-collapse -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"  >Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
 		</div>
-		<!--/.container-fluid -->
 	</nav>
 
 	<!-- Full Page Image Background Carousel Header -->
@@ -118,13 +111,12 @@
     {% endblock %}
     </div>
 
-
-
+	
 	<div class="container">
-	<h1></h1>
-	<h1></h1>
-	<h1></h1>
-	<h1></h1>
+	<h1> </h1>
+	<h1> </h1>
+	<h1> </h1>
+	<h1> </h1>
 	</div>
 
 	<div class="container-fluid" style="background:#222">
@@ -133,7 +125,7 @@
 		  <div class="container" style="background:#333">
 			<div class="row">
 				<div class="col-xs-12 col-md-9">
-					<h5 style="color:#fff;margin-top:22px;"> Copyright 2017   |   Pgala Gaming   |   Todos los derechos reservados.</h5>
+					<h5 style="color:#fff; margin-top:22px;"> Copyright 2017   |   Pgala Gaming   |   Todos los derechos reservados.</h5>
 				</div>
 				<div class="col-xs-12 col-md-3">
 					 <a class="btn btn-social-icon btn-twitter" style="margin-top:10px; margin-bottom:10px" target="_blank" data-toggle="tooltip" title="twitter" href="https://www.google.com.co">
@@ -157,13 +149,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- Importante llamar antes a jQuery para que funcione bootstrap.min.js-->
     <script src="{% static 'js/bootstrap.min.js' %}"> </script> <!-- Llamamos al JavaScript de Bootstrap -->
+    
 	<script src="{% static 'js/jquery.easing.min.js' %}"></script>
     <script src="{% static 'js/scrolling-nav.js' %}"></script>
 
     <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
+
 	<script>
+
 	$(document).ready(function(){
-		$('[data-toggle="tooltip"]').tooltip();
+		
+		$('.dropdown-toggle').dropdown()
 	});
 	</script>
 
